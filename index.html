@@ -2,25 +2,76 @@
 <html lang="en-US">
 
 <head>
-    <link rel="stylesheet" href="Ensayo1.css">
-    <link rel="javascript" href="Ensayo1.js">
-
+    <meta charset="utf-8">
+    <title>Ensayo 2</title>
+    <style>
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'helvetica neue', helvetica, sans-serif;
+            font-size: 30px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-align: start;
+            border: 2px solid rgba(0, 0, 200, 0.6);
+            background: rgba(0, 0, 200, 0.3);
+            color: rgba(0, 0, 200, 0.6);
+            box-shadow: 1px 1px 2px rgba(0, 0, 200, 0.4);
+            border-radius: 10px;
+            padding: 3px 10px;
+            display: inline-block;
+            cursor: pointer;
+        }
+    </style>
 </head>
-
-
 
 <body>
 
-    <div class="warning">
-        <img src="foto2.jpg" width="100" height="100" alt="An intimidating family.">
-        <p>Beware of me</p>
-    </div>
-
-    <p id="demo">bb: </p>
-    <script type="text/javascript" src="ensayo1.js"></script>
 
     <h1>¿Cual es tu nombre: ????</h1>
-    <script type="text/javascript" src="ensayo2.js"></script>
+    <br>
+    <script>
+        const cuadro1 = document.querySelector('h1');
+
+        cuadro1.addEventListener('click', actualiza);
+
+        function actualiza() {
+            let nombre = prompt('Teclea tu nombre');
+            cuadro1.textContent = 'Soy: ' + nombre;
+        }
+    </script>
+
+
+    <h2>¿Cual es tu edad: ????</h2>
+    <br>
+    <script>
+        const edad = document.querySelector('h2');
+
+        edad.addEventListener('click', updateName);
+
+        function updateName() {
+            let tengo = prompt('Teclea tu edad');
+            edad.textContent = 'Tengo: ' + tengo + 'años.';
+        }
+    </script>
+
+    <h3>¿Casado o soltero?</h3>
+    <br>
+    <script>
+        const estado = document.querySelector('h3');
+
+        estado.addEventListener('click', updateName);
+
+        function updateName() {
+            let casado = prompt('Teclea tu estado civil');
+            estado.textContent = 'Estado civil: ' + casado;
+        }
+    </script>
+
+
+
+
 </body>
 
 </html>
