@@ -2,83 +2,74 @@
 <html lang="en-US">
 
 <head>
-    <meta charset="utf-8">
-    <title>Ensayo 2</title>
-    <style>
-        h1,
-        h2,
-        h3,
-        h4 {
-            font-family: 'helvetica neue', helvetica, sans-serif;
-            font-size: 30px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            text-align: start;
-            border: 2px solid rgba(0, 0, 200, 0.6);
-            background: rgba(0, 0, 200, 0.3);
-            color: rgba(0, 0, 200, 0.6);
-            box-shadow: 1px 1px 2px rgba(0, 0, 200, 0.4);
-            border-radius: 10px;
-            padding: 3px 10px;
-            display: inline-block;
-            cursor: pointer;
-        }
-    </style>
+  <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
 
+    <h1> <strong>     Actualización de Existencias. </strong> </h1>
 
-    <h1>¿Cual es tu nombre: ????</h1>
-    <br>
-    <script>
-        const cuadro1 = document.querySelector('h1');
+<table>
+<thead>
+        <tr>
+            <th colspan="8">Actualización de Existencias.</th>
+        </tr>
+    </thead>
+    <tbody>
+  <colgroup span="8"></colgroup>
+  <tr>
+    <th scope="col"><strong>  Producto </strong></th>
+    <th scope="col"><strong>  Existencias </strong></th>
+    <th scope="col"><strong>  Minimos </strong></th>
+    <th scope="col"><strong>  Por comprar </strong></th>
+    <th scope="col"><strong>  Inversión </strong></th>
+    <th scope="col"><strong>  Por Invertir </strong></th>
+    <th scope="col"><strong>  Ganancia del mes anterior </strong></th>
+    <th scope="col"><strong>  Ganancia actual </strong></th>
+  </tr>
 
-        cuadro1.addEventListener('click', actualiza);
+  <tr>
+    <td id = "CC3LR" scope="row">Cocacola 3L retornable</td>
+    <td id = "CC3L"><code>0</code></td>
+    <td id = "minimodeCC3L"><code>12</code></td>
+    <td id = "comprarCC3L"><code>12</code></td>
+    <td id = "inversion">166.5</td>
+    <td id = "porinvertir"><code>0</code></td>
+    <td id = "gananciapasada"><code>300</code></td>
+    <td id = "gananciaactual"><code>200</code></td>
+  </tr>
+  <tr>
+    <td id = "CC114LR" scope="row">Cocacola 1 1/4 vidrio</td>
+    <td id = "CC114L"><code>0</code></td>
+    <td id = "minimodeCC114L"><code>16</code></td>
+    <td id = "comprarCC114L"><code>16</code></td>
+    <td id = "inversionCC114L">127.31</td>
+    <td id = "porinvertirCC114L"><code>0</code></td>
+    <td id = "gananciapasadaCC114L"><code>100</code></td>
+    <td id = "gananciaactualCC114L"><code>70</code></td>
+  </tr>
+  </tbody>
+</table>
 
-        function actualiza() {
-            let nombre = prompt('Teclea tu nombre');
-            cuadro1.textContent = 'Soy: ' + nombre;
-        }
-    </script>
+<table>
+    <tbody>
+  <colgroup span="2"></colgroup>
+  <tr>
+    <th id = "t11" scope="col"><strong>  Total invertido </strong></th>
+    <th id = "t12" scope="col"><strong>  Total que se necesita invertir </strong></th>
+  </tr>
 
-
-    <h2>¿Cual es tu edad: ????</h2>
-    <br>
-    <script>
-        const edad = document.querySelector('h2');
-
-        edad.addEventListener('click', updateName);
-
-        function updateName() {
-            let tengo = prompt('Teclea tu edad');
-            edad.textContent = 'Tengo: ' + tengo + 'años.';
-        }
-    </script>
-
-    <h3>¿Casado o soltero?</h3>
-    <br>
-    <script>
-        const estado = document.querySelector('h3');
-
-        estado.addEventListener('click', updateName);
-
-        function updateName() {
-            let casado = prompt('Teclea tu estado civil');
-            estado.textContent = 'Estado civil: ' + casado;
-        }
-    </script>
-
- <br>
-    <style>
-        a:hover {
-            color: rgba(25, 9, 247, 0.925);
-            font-size: 35px;
-        }
-    </style>
-    <a font-size: 15px href="https://icceelectronica.github.io">Regresar a la página principal</a>
+  <tr>
+    <td id = "t21" scope="row">0</td>
+    <td id = "t22"><code>0</code></td>
+  </tr>
+ 
+  </tbody>
+</table>
 
 
+    <script src="main.jsx"></script>
+   
 </body>
 
 </html>
