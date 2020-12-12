@@ -33,7 +33,7 @@ var totalporinvertir = document.querySelector('#t22');
 
 //Realización de las consultas de datos existentes en el HTML
 document.querySelector('h1').onclick = function() {
-        alert('¿hola como estas?, Esta pagina actualiza los inventarios y nos da sugerencias de compra. Y para ello debes actualizar los datos de las casillas de existencias. Tomando en cuenta que las ganancias mensuales son un indicador para nuestra toma de decisiones.');
+        alert('¿hola como estas?, Esta pagina actualiza los inventarios y nos da sugerencias de compra. Y para ello debes actualizar los datos de las casillas de existencias. Tomando en cuenta que los totales y las ganancias mensuales son indicadores para nuestra toma de decisiones.');
     }
     
 //Implementación de las funciones que realizaran la actualización de datos
