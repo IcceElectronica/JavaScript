@@ -39,7 +39,7 @@ document.querySelector('h1').onclick = function() {
 //Implementación de las funciones que realizaran la actualización de datos
 CC3L.addEventListener('click', actualiza);
 function actualiza() {
-    let name = prompt('¿Cuantas botellas de CC3LR hay? Sin revasar el minimo sugerido.');
+    let name = prompt('¿Cuantas botellas de CC3LR hay? Sin rebasar el minimo sugerido.');
     CC3L.textContent = Number(name);
     comprarCC3L.textContent = 12 - name ;
     inversion.textContent =  (Math.round(Number(precioCC3Lretornable * name )));
@@ -50,7 +50,7 @@ function actualiza() {
 
    CC114L.addEventListener('click', actualizando);
 function actualizando() {
-    let name2 = prompt('¿Cuantas botellas de CC1,1/4 hay? Sin revasar el minimo sugerido.');
+    let name2 = prompt('¿Cuantas botellas de CC1,1/4 hay? Sin rebasar el minimo sugerido.');
     CC114L.textContent = Number(name2);
     comprarCC114L.textContent = 16 - name2 ;
     inversionCC114L.textContent =  (Math.round(Number(precioCC1Luncuarto * name2 )));
